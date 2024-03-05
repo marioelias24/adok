@@ -1,0 +1,38 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import Lamp from "@/components/icons/Lamp.astro"
+import Carousel from "@/components/Carousel.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+
+<div class="">
+  <h1 class="text-4xl font-bold tracking-tight text-red-800 sm:text-5xl dark:text-white">
+    Nuestas ideas
+  </h1>
+  <div class="grid grid-cols-5 gap-4">
+    <p class="col-span-4 text-xl text-gray-800 dark:[&>strong]:text-red-200 [&>strong]:text-red-500 [&>strong]:font-semibold dark:text-gray-300">
+      En Adok, nos destacamos por abordar las cosas de manera única, 
+      <strong>
+        mostrando flexibilidad frente al cambio y haciendo de nuestras ideas el impulso que nos guía.
+      </strong> 
+      Esta filosofía transforma cada proyecto en una experiencia inolvidable, 
+      al mismo tiempo nos impulsa a alcanzar con éxito los resultados propuestos.
+    </p>
+    <Lamp class="col-span-1" />
+      
+  </div>  
+  <nav class="flex flex-wrap gap-4 mt-7">
+    <SocialPill href="mailto:miduga@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctanos!
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/company/adok-btl/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
